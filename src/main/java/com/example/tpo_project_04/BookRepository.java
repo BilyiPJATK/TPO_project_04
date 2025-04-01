@@ -1,5 +1,8 @@
-package com.example.tpo_project_04;
+    package com.example.tpo_project_04;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+    import org.springframework.data.repository.CrudRepository;
 
-public interface BookRepository extends JpaRepository<Book, Long> {}
+    import java.util.List;
+
+    public interface BookRepository extends CrudRepository<Book, Long> {
+    }

@@ -20,4 +20,10 @@ public class Author {
             inverseJoinColumns = @JoinColumn(name = "book_id")
     )
     private List<Book> books;
+
+    @Override
+    public String toString() {
+        return "Author{id=" + id + ", firstName='" + firstName + "', lastName='" + lastName + "', bio='" + bio + "'}";
+    }
+
 }

@@ -19,4 +19,10 @@ public class Book {
 
     @ManyToMany(mappedBy = "books")
     private List<Author> authors;
+
+    @Override
+    public String toString() {
+        return "Book{id=" + id + ", title='" + title + "', publicationDate='" + publicationDate + "}";
+    }
+
 }
